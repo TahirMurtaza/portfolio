@@ -1,6 +1,4 @@
 "use client"
-import logoLight from "@/assets/img/logo-light-2.png"
-import Image from 'next/image';
 import Link from 'next/link';
 import useStickyMenu from '@/hooks/useStickyMenu';
 import useSubMenuToggle from '@/hooks/useSubMenuToggle';
@@ -34,12 +32,12 @@ const HeaderV3 = () => {
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" onClick={openMenu}>
                                 <i className="fa fa-bars" />
                             </button>
-                            <Link className="navbar-brand" href="/">
-                                <Image src={logoLight} className="logo" alt="Logo" />
+                            <Link className="navbar-brand" href="/" style={{ fontWeight: 800, fontSize: '1.6rem', letterSpacing: '2px', color: 'inherit', textDecoration: 'none' }}>
+                                TM
                             </Link>
                         </div>
                         <div className={`collapse navbar-collapse collapse-mobile ${isOpen ? "show" : ""}`} id="navbar-menu">
-                            <Image src={logoLight} alt="Logo" />
+                            <span style={{ fontWeight: 800, fontSize: '1.6rem', letterSpacing: '2px' }}>TM</span>
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" onClick={closeMenu}>
                                 <i className="fa fa-times" />
                             </button>
