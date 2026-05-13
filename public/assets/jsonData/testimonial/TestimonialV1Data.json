@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "count": "01",
+        "thumb": "2.png",
+        "thumbLight": "2-light.png",
+        "name": "Brooklyn Simmons",
+        "role": "UI/UX DESIGNER",
+        "reviewText": "Thanks to your web agency team for their professional work. The website they created for my business exceeded my expectations, and my clients have given positive feedback about its design and user-friendliness.",
+        "reviewCount": 60,
+        "ratings": 4.0
+    },
+    {
+        "id": 2,
+        "count": "02",
+        "thumb": "3.png",
+        "thumbLight": "3-light.png",
+        "name": "Brooklyn Simmons",
+        "role": "UI/UX DESIGNER",
+        "reviewText": "Thanks to your web agency team for their professional work. The website they created for my business exceeded my expectations, and my clients have given positive feedback about its design and user-friendliness.",
+        "reviewCount": 65,
+        "ratings": 4.5
+    },
+    {
+        "id": 3,
+        "count": "03",
+        "thumb": "4.png",
+        "thumbLight": "4-light.png",
+        "name": "Brooklyn Simmons",
+        "role": "UI/UX DESIGNER",
+        "reviewText": "Thanks to your web agency team for their professional work. The website they created for my business exceeded my expectations, and my clients have given positive feedback about its design and user-friendliness.",
+        "reviewCount": 70,
+        "ratings": 5
+    }
+]

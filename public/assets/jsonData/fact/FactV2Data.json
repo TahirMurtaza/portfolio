@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Python",
+        "end": 95,
+        "icon": "ai.png",
+        "delay": "0ms"
+    },
+    {
+        "id": 2,
+        "title": "AI / LLMs",
+        "end": 92,
+        "icon": "1.png",
+        "delay": "100ms"
+    },
+    {
+        "id": 3,
+        "title": "FastAPI / Django",
+        "end": 90,
+        "icon": "2.png",
+        "delay": "200ms"
+    },
+    {
+        "id": 4,
+        "title": "React / Next.js",
+        "end": 85,
+        "icon": "3.png",
+        "delay": "300ms"
+    },
+    {
+        "id": 5,
+        "title": "Angular",
+        "end": 82,
+        "icon": "4.png",
+        "delay": "400ms"
+    },
+    {
+        "id": 6,
+        "title": "AWS / Azure",
+        "end": 80,
+        "icon": "5.png",
+        "delay": "500ms"
+    }
+]

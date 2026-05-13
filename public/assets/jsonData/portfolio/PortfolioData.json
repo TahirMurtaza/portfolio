@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "thumb": "1.jpg",
+        "thumbFull": "1-full.jpg",
+        "tags": ["AI", "Voice"],
+        "title": "Comforce.Core — Voice AI Clinical Trial Platform"
+    },
+    {
+        "id": 2,
+        "thumb": "2.jpg",
+        "thumbFull": "2-full.jpg",
+        "tags": ["AI", "Full Stack"],
+        "title": "Kids Stories — AI-Generated Picture Books Platform"
+    },
+    {
+        "id": 3,
+        "thumb": "3.jpg",
+        "thumbFull": "3-full.jpg",
+        "tags": ["AI", "Voice"],
+        "title": "AI Voice Assistant — Vapi Multi-Agent System"
+    },
+    {
+        "id": 4,
+        "thumb": "6.jpg",
+        "thumbFull": "6-full.jpg",
+        "tags": ["AI", "Marketing"],
+        "title": "Adology AI — Brain for Marketing Intelligence"
+    },
+    {
+        "id": 5,
+        "thumb": "5.jpg",
+        "thumbFull": "5-full.jpg",
+        "tags": ["AI", "Security"],
+        "title": "Morado — AI Powered Threat Intelligence"
+    },
+    {
+        "id": 6,
+        "thumb": "4.jpg",
+        "thumbFull": "4-full.jpg",
+        "tags": ["AI", "OCR"],
+        "title": "Dijit App — AI OCR Document Management"
+    }
+]

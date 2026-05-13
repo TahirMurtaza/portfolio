@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "activeClass": "",
+        "icon": "1.png",
+        "thumbFull": "app-development.jpg",
+        "title": "AI Development & Automation",
+        "text": "Building intelligent AI-powered systems — voice agents, LLM workflows, and autonomous pipelines that automate complex business operations end-to-end.",
+        "btnText": "Read More",
+        "delay": "100ms"
+    },
+    {
+        "id": 2,
+        "activeClass": "active",
+        "icon": "2.png",
+        "thumbFull": "web-design.jpg",
+        "title": "Full Stack Web Development",
+        "text": "Designing and delivering scalable full-stack applications using Python (FastAPI, Django), React, Next.js, Angular, and cloud-native deployments on AWS and Azure.",
+        "btnText": "Read More",
+        "delay": "200ms"
+    },
+    {
+        "id": 3,
+        "activeClass": "",
+        "icon": "3.png",
+        "thumbFull": "digital-marketing.jpg",
+        "title": "LLM & Prompt Engineering",
+        "text": "Crafting optimized prompts and fine-tuning LLM outputs (OpenAI, Gemini, Claude) for production use cases — reducing bias, improving accuracy and consistency.",
+        "btnText": "Read More",
+        "delay": "400ms"
+    },
+    {
+        "id": 4,
+        "activeClass": "",
+        "icon": "4.png",
+        "thumbFull": "ui-ux-design.jpg",
+        "title": "Voice AI Agents",
+        "text": "Building production-grade voice AI agents with Vapi and Twilio — multi-agent squads for outbound calling, screening, scheduling, and warm transfers.",
+        "btnText": "Read More",
+        "delay": "600ms"
+    }
+]

@@ -1,0 +1,41 @@
+{
+    "logoLeft": [
+        {
+            "id": 1,
+            "logo": "1-light.png",
+            "animation": "animate__animated animate__fadeInLeft"
+        },
+        {
+            "id": 2,
+            "logo": "2-light.png",
+            "animation": "animate__animated animate__fadeInLeft"
+        },
+        {
+            "id": 3,
+            "logo": "3-light.png",
+            "animation": "animate__animated animate__fadeInLeft"
+        },
+        {
+            "id": 4,
+            "logo": "4-light.png",
+            "animation": "animate__animated animate__fadeInLeft"
+        }
+    ],
+    "logoRight": [
+        {
+            "id": 5,
+            "logo": "5-light.png",
+            "animation": "animate__animated animate__fadeInRight"
+        },
+        {
+            "id": 6,
+            "logo": "6-light.png",
+            "animation": "animate__animated animate__fadeInRight"
+        },
+        {
+            "id": 7,
+            "logo": "7-light.png",
+            "animation": "animate__animated animate__fadeInRight"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "sectionTitle": "Work Experience",
+        "items": [
+            {
+                "id": 101,
+                "title": "Lead Full Stack AI Engineer",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "MA Technologies — Remote",
+                "duration": "Apr 2025 - Present",
+                "description": "Architected and deployed an AI Voice Assistant for clinical research, automating patient screening and scheduling, reducing manual effort by 30%. Built real-time AI Agents with Vapi, FastAPI, Azure, Gemini, and OpenAI. Reduced recruiter workload by 40% and achieved 99.9% system reliability."
+            },
+            {
+                "id": 102,
+                "title": "LLM Prompt Engineer",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "Turing (Google) — Remote",
+                "duration": "Oct 2024 - Feb 2025",
+                "description": "Developed, tested, and refined prompts for Large Language Models, optimizing AI output for specific use cases. Reduced bias by 20%, reduced ambiguity by 15%, and improved user satisfaction through rigorous iterative testing."
+            },
+            {
+                "id": 103,
+                "title": "Senior Software Engineer",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "Optimyse — Remote",
+                "duration": "May 2021 - Jun 2024",
+                "description": "Led full-stack development of a SaaS multi-tenant e-commerce platform. Automated product migration with FastAPI, cutting migration time by 50%. Built real-time product monitoring with Python Scrapy/Selenium and orchestrated Firebase for auth and analytics."
+            },
+            {
+                "id": 104,
+                "title": "Full Stack Engineer",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "Dijit Labs AI-OCR — Remote",
+                "duration": "May 2023 - Jul 2023",
+                "description": "Automated data extraction from invoices and delivery notes using Angular Material and Java Spring Boot, increasing processing efficiency by 35%. Deployed and managed applications on AWS EC2, S3, and Lambda."
+            },
+            {
+                "id": 105,
+                "title": "Team Lead",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "5Cube — Karachi, Pakistan",
+                "duration": "Feb 2019 - May 2021",
+                "description": "Led a cross-functional team of 8+, achieving 95% client satisfaction. Engineered a Resume & Job Scoring/Matching Engine using Django REST Framework, and developed a Retail Management System with offline data syncing using Angular and PostgreSQL."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "sectionTitle": "Education & Certifications",
+        "items": [
+            {
+                "id": 201,
+                "title": "Bachelor of Science in Computer Science",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "PAF Karachi Institute of Economics & Technology",
+                "duration": "Feb 2013 - Feb 2018",
+                "description": "Graduated with a BS in Computer Science. Gained strong foundations in software engineering, algorithms, data structures, databases, and computer networks."
+            },
+            {
+                "id": 202,
+                "title": "AI Workflow Automation & LLM Engineering",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "Turing — Professional Development",
+                "duration": "2024",
+                "description": "Specialized training in LLM prompt engineering, AI agent architecture, and fine-tuning generative AI responses for real-world production use cases across diverse domains."
+            },
+            {
+                "id": 203,
+                "title": "Cloud & DevOps Practices",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "Self-directed — AWS, Azure, Docker",
+                "duration": "2021 - Present",
+                "description": "Hands-on expertise with AWS (EC2, S3, Lambda), Azure (Key Vault, App Insights, Storage Blob), Docker, NGINX, CI/CD pipelines, and Agile/Scrum methodologies."
+            }
+        ]
+    }
+]

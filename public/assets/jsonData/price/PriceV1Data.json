@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "WordPress Development",
+        "description": "Simple and flexible per - user pricing",
+        "icon": "fab fa-wordpress",
+        "price": 48,
+        "animation": "animate__animated animate__fadeInUp",
+        "delay": "100ms",
+        "features": [
+            "1 Page with Elementor",
+            "Design Customization",
+            "Responsive Design",
+            "1 Page with Elementor",
+            "Design Customization",
+            "Responsive Design"
+        ],
+        "buttonText": "Order Now"
+    },
+    {
+        "id": 2,
+        "title": "Static frontend design",
+        "description": "Simple and flexible per - user pricing",
+        "icon": "fab fa-bootstrap",
+        "price": 28,
+        "animation": "animate__animated animate__fadeInUp",
+        "delay": "300ms",
+        "features": [
+            "2 Page with Bootstrap5",
+            "Design implement",
+            "Responsive Design",
+            "2 Page with Bootstrap5",
+            "Design implement",
+            "Responsive Design"
+        ],
+        "buttonText": "Order Now"
+    }
+]

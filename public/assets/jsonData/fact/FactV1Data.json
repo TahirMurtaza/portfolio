@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "end": 12,
+        "suffix": "+",
+        "label": "Years of Experience"
+    },
+    {
+        "id": 2,
+        "end": 138,
+        "suffix": "+",
+        "label": "Projects completed"
+    }
+]
