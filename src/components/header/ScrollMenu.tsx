@@ -12,10 +12,7 @@ const ScrollMenu = ({ closeMenu }) => {
             <li>
                 <Link className="smooth-menu" to="resume" offset={-50} onClick={closeMenu}>Resume</Link>
             </li>
-            <li>
-                <Link className="smooth-menu" to="pricing" offset={-50} onClick={closeMenu}>Pricing</Link>
-            </li>
-            <li>
+<li>
                 <Link className="smooth-menu" to="contact" offset={-50} onClick={closeMenu}>contact</Link>
             </li>
         </>

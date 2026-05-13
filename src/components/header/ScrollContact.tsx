@@ -1,14 +1,12 @@
-import { Link } from 'react-scroll';
-
 interface DataType {
     closeMenu?: () => void;
 }
 
-const ScrollContact: React.FC<DataType> = ({ closeMenu }) => {
+const ScrollContact: React.FC<DataType> = () => {
     return (
         <>
             <li className='button'>
-                <Link className="smooth-menu" to="contact" offset={-50} onClick={closeMenu}>{`Let's Talk`} <i className="fas fa-comment-alt" /></Link>
+                <a href="https://calendly.com/tahirmurtaza5152/30min" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}>{`Let's Talk`} <i className="fas fa-comment-alt" /></a>
             </li>
         </>
     );

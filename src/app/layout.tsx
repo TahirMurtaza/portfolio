@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${barlow.className}`}>
+      <body className={`${barlow.className}`} style={{ overflowX: 'hidden' }}>
         <ToastContainer />
         <ThemeDetector />
         <Dependency />
