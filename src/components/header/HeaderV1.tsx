@@ -1,6 +1,8 @@
 "use client";
 import logo from "@/assets/img/logo.png";
+import logoLight from "@/assets/img/logo-light-2.png";
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import useStickyMenu from '@/hooks/useStickyMenu';
 import useSubMenuToggle from '@/hooks/useSubMenuToggle';
 import ScrollMenu from "./ScrollMenu";
@@ -15,6 +17,17 @@ const HeaderV1 = () => {
     const isMenuSticky = useStickyMenu();
     const { toggleSubMenu, isOpened } = useSubMenuToggle();
     const isMobile = useIsMobile();
+    const [isDark, setIsDark] = useState(false);
+
+    useEffect(() => {
+        const mq = window.matchMedia('(prefers-color-scheme: dark)');
+        setIsDark(mq.matches);
+        const handler = (e: MediaQueryListEvent) => setIsDark(e.matches);
+        mq.addEventListener('change', handler);
+        return () => mq.removeEventListener('change', handler);
+    }, []);
+
+    const activeLogo = isDark ? logoLight : logo;
 
     return (
         <>
@@ -35,11 +48,11 @@ const HeaderV1 = () => {
                                 <i className="fa fa-bars" />
                             </button>
                             <Link className="navbar-brand" href="/">
-                                <Image src={logo} className="logo" alt="Logo" />
+                                <Image src={activeLogo} className="logo" alt="Logo" />
                             </Link>
                         </div>
                         <div className={`collapse navbar-collapse collapse-mobile ${isOpen ? "show" : ""}`} id="navbar-menu">
-                            <Image src={logo} alt="Logo" />
+                            <Image src={activeLogo} alt="Logo" />
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" onClick={closeMenu}>
                                 <i className="fa fa-times" />
                             </button>
