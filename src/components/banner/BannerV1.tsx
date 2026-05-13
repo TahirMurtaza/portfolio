@@ -39,7 +39,7 @@ const BannerV1 = () => {
                                     </p>
                                     <div className="flex-social mt-40">
                                         <div className="button">
-                                            <a className="btn-style-regular" href="#contact"><span>Hire Me Now</span> <i className="fas fa-arrow-right" /></a>
+                                            <a className="btn-style-regular" href="https://calendly.com/tahirmurtaza5152/30min" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer' }}><span>Let&apos;s Talk</span> <i className="fas fa-arrow-right" /></a>
                                         </div>
                                         <ul className="social-info">
                                             <SocialShareV1 />
