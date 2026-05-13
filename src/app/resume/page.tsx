@@ -1,6 +1,8 @@
 import LayoutV2 from '@/components/Layouts/LayoutV2';
 import ResumeV1 from '@/components/resume/ResumeV1';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
     title: "Antux - Personal Portfolio - Resume"
 }

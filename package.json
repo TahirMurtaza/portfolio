@@ -14,7 +14,7 @@
     "gsap": "^3.12.7",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
-    "next": "15.3.1",
+    "next": "^15.5.18",
     "react": "^19.1.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
@@ -35,7 +35,7 @@
     "@types/react-modal-video": "^1.2.3",
     "@types/react-scroll": "^1.8.10",
     "eslint": "^9.25.0",
-    "eslint-config-next": "15.3.1",
+    "eslint-config-next": "^15.5.18",
     "typescript": "^5.8.3"
   }
 }
