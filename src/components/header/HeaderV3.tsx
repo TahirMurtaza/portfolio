@@ -33,7 +33,6 @@ const HeaderV3 = () => {
                             </Link>
                         </div>
                         <div className={`collapse navbar-collapse collapse-mobile ${isOpen ? "show" : ""}`} id="navbar-menu">
-                            <span style={{ fontWeight: 800, fontSize: '4.6rem', letterSpacing: '2px' }}>TM</span>
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" onClick={closeMenu}>
                                 <i className="fa fa-times" />
                             </button>
