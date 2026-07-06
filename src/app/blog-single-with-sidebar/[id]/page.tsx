@@ -3,7 +3,7 @@ import BlogSingleWithSidebarContent from '@/components/blog/BlogSingleWithSideba
 import LayoutV2 from '@/components/Layouts/LayoutV2';
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Blog Single With Sidebar"
+    title: "Tahir Murtaza — Blog Single With Sidebar"
 }
 
 interface Params {

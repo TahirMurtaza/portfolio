@@ -2,7 +2,7 @@ import LayoutV2 from '@/components/Layouts/LayoutV2';
 import PriceV1 from '@/components/price/PriceV1';
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Pricing"
+    title: "Tahir Murtaza — Pricing"
 }
 
 const PricingPage = () => {

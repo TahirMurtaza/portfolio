@@ -3,7 +3,7 @@ import LayoutV2 from '@/components/Layouts/LayoutV2';
 import PortfolioV1 from '@/components/portfolio/PortfolioV1';
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Projects"
+    title: "Tahir Murtaza — Projects"
 }
 
 const ProjectsPage = () => {

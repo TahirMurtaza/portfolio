@@ -15,7 +15,7 @@ import ServicesV1 from '@/components/services/ServicesV1';
 import TestimonialV2 from '@/components/testimonial/TestimonialV2';
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Home Dark"
+    title: "Tahir Murtaza — Home Dark"
 }
 
 const HomeDark = () => {

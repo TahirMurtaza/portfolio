@@ -3,7 +3,7 @@ import ServicesDetailsContent from '@/components/services/ServicesDetailsContent
 import ServicesData from "@/assets/jsonData/services/ServicesData.json";
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Service Details"
+    title: "Tahir Murtaza — Service Details"
 }
 
 interface Params {

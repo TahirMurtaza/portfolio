@@ -2,7 +2,7 @@ import LayoutV2 from '@/components/Layouts/LayoutV2';
 import ServicesV1 from '@/components/services/ServicesV1';
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Services"
+    title: "Tahir Murtaza — Services"
 }
 
 const ServicePage = () => {

@@ -4,7 +4,7 @@ import PromoV1 from '@/components/promo/PromoV1';
 import PortfolioData from "@/assets/jsonData/portfolio/PortfolioData.json"
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Project Details"
+    title: "Tahir Murtaza — Project Details"
 }
 
 interface Params {

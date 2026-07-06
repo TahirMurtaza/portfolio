@@ -2,7 +2,7 @@ import BlogWithSidebarContent from '@/components/blog/BlogWithSidebarContent';
 import LayoutV2 from '@/components/Layouts/LayoutV2';
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Blog With Sidebar"
+    title: "Tahir Murtaza — Blog With Sidebar"
 }
 
 const BlogWithSidebarPage = () => {

@@ -2,7 +2,7 @@ import ContactV1 from '@/components/contact/ContactV1';
 import LayoutV2 from '@/components/Layouts/LayoutV2';
 
 export const metadata = {
-    title: "Antux - Personal Portfolio - Contact Us"
+    title: "Tahir Murtaza — Contact Us"
 }
 
 const ContactPage = () => {
