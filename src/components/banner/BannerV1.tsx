@@ -9,7 +9,7 @@ const BannerV1 = () => {
 
     const textLines = [
         "<b>Full Stack AI Engineer</b>",
-        "<b>LLM Prompt Engineer</b>",
+        "<b>AI Consultant</b>",
         "<b>Voice AI Specialist</b>"
     ]
 
