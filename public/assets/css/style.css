@@ -6707,16 +6707,8 @@ body.loaded {
     border-radius: 14px;
     background: var(--color-primary);
     overflow: hidden;
-    animation: frame-glow 3s ease-in-out infinite;
-}
-
-@keyframes frame-glow {
-    0%, 100% {
-        box-shadow: 0 0 18px rgba(255, 174, 0, 0.35), 0 12px 40px rgba(0, 0, 0, 0.18);
-    }
-    50% {
-        box-shadow: 0 0 42px rgba(255, 174, 0, 0.65), 0 12px 40px rgba(0, 0, 0, 0.18);
-    }
+    position: relative;
+    z-index: 1;
 }
 
 .photo-frame img {
@@ -6808,5 +6800,34 @@ body.loaded {
 @media (max-width: 991px) {
     .contact-direct-links {
         margin-top: 0;
+    }
+}
+
+
+/* ============================================================
+   Profile photo — soft radial halo (not box-bound)
+============================================================ */
+.banner-style-one-area .thumb {
+    position: relative;
+}
+
+.banner-style-one-area .thumb::before {
+    content: "";
+    position: absolute;
+    inset: -70px;
+    background: radial-gradient(ellipse at center, rgba(255, 174, 0, 0.5) 0%, rgba(255, 174, 0, 0.18) 40%, transparent 70%);
+    filter: blur(35px);
+    pointer-events: none;
+    animation: halo-pulse 3s ease-in-out infinite;
+}
+
+@keyframes halo-pulse {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
     }
 }
