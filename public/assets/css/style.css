@@ -6890,3 +6890,16 @@ body.loaded {
         opacity: 0.1;
     }
 }
+
+/* ============================================================
+   Footer — fixes
+============================================================ */
+.footer-items .footer-logot {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.bg-dark .footer-items p {
+    color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.25);
+}
