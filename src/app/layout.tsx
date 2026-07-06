@@ -28,7 +28,8 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Antux - Personal Portfolio - React NextJs Template"
+  title: "Tahir Murtaza — Full Stack AI Engineer",
+  description: "Full Stack AI Engineer building AI-powered products — voice AI agents, LLM workflows, and scalable full-stack applications with Python, React, and cloud platforms.",
 };
 
 export default function RootLayout({
