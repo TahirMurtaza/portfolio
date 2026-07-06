@@ -6782,3 +6782,31 @@ body.loaded {
         width: 300px;
     }
 }
+
+/* ============================================================
+   Contact — direct links column
+============================================================ */
+.contact-direct-links {
+    list-style: none;
+    padding: 0;
+    margin: 120px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.contact-direct-links a {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contact-direct-links a i {
+    margin-right: 12px;
+    color: var(--color-primary);
+}
+
+@media (max-width: 991px) {
+    .contact-direct-links {
+        margin-top: 0;
+    }
+}

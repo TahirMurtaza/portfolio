@@ -70,18 +70,18 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                                 </form>
                             </div>
                             <div className="col-lg-5 offset-lg-1 mt-md-50 mt-xs-40">
-                                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                                <ul className="contact-direct-links">
                                     <li>
-                                        <a href="mailto:tahirmurtaza5152@gmail.com"><i className="fas fa-envelope" style={{ marginRight: '12px' }} />tahirmurtaza5152@gmail.com</a>
+                                        <a href="mailto:tahirmurtaza5152@gmail.com"><i className="fas fa-envelope" />tahirmurtaza5152@gmail.com</a>
                                     </li>
                                     <li>
-                                        <a href="https://calendly.com/tahirmurtaza5152/30min" target="_blank" rel="noopener noreferrer"><i className="fas fa-calendar-alt" style={{ marginRight: '12px' }} />Book a 30-min call</a>
+                                        <a href="https://calendly.com/tahirmurtaza5152/30min" target="_blank" rel="noopener noreferrer"><i className="fas fa-calendar-alt" />Book a 30-min call</a>
                                     </li>
                                     <li>
-                                        <a href="https://linkedin.com/in/tahir-murtaza-203131b6" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in" style={{ marginRight: '12px' }} />LinkedIn</a>
+                                        <a href="https://linkedin.com/in/tahir-murtaza-203131b6" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in" />LinkedIn</a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/TahirMurtaza" target="_blank" rel="noopener noreferrer"><i className="fab fa-github" style={{ marginRight: '12px' }} />GitHub</a>
+                                        <a href="https://github.com/TahirMurtaza" target="_blank" rel="noopener noreferrer"><i className="fab fa-github" />GitHub</a>
                                     </li>
                                 </ul>
                             </div>
