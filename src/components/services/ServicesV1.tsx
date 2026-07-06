@@ -15,36 +15,58 @@ const ServicesV1 = ({ sectionClass, hasTitle }: DataType) => {
     useEffect(() => {
         const track = trackRef.current;
         if (!track) return;
+        const wrapper = track.parentElement as HTMLElement;
 
         let x = 0;
-        let boost = 0;
-        let lastY = window.scrollY;
+        let vel = 0;          // fling velocity after a drag
         let paused = false;
+        let dragging = false;
+        let lastMoveX = 0;
         let raf = 0;
         let last = performance.now();
 
-        // Page scroll gives the strip an extra push
-        const onScroll = () => {
-            const dy = window.scrollY - lastY;
-            lastY = window.scrollY;
-            boost += dy * 0.6;
+        // Trackpad / mouse horizontal wheel
+        const onWheel = (e: WheelEvent) => {
+            if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+                x -= e.deltaX;
+                e.preventDefault();
+            }
+        };
+
+        // Drag / swipe to scroll
+        const onPointerDown = (e: PointerEvent) => {
+            dragging = true;
+            vel = 0;
+            lastMoveX = e.clientX;
+            track.style.cursor = 'grabbing';
+            track.setPointerCapture(e.pointerId);
+        };
+        const onPointerMove = (e: PointerEvent) => {
+            if (!dragging) return;
+            const dx = e.clientX - lastMoveX;
+            lastMoveX = e.clientX;
+            x += dx;
+            vel = dx;
+        };
+        const onPointerUp = () => {
+            dragging = false;
+            track.style.cursor = 'grab';
         };
 
         const onEnter = () => { paused = true; };
-        const onLeave = () => { paused = false; };
+        const onLeave = () => { paused = false; onPointerUp(); };
 
         const tick = (now: number) => {
             const dt = Math.min((now - last) / 1000, 0.1);
             last = now;
             const half = track.scrollWidth / 2;
 
-            if (!paused) x -= 35 * dt; // constant auto-scroll speed (px/s)
+            if (!paused && !dragging) x -= 35 * dt; // constant auto-scroll speed (px/s)
 
-            if (Math.abs(boost) > 0.05) {
-                x -= boost * 0.12; // apply scroll push, decaying smoothly
-                boost *= 0.9;
-            } else {
-                boost = 0;
+            // Momentum after releasing a drag
+            if (!dragging && Math.abs(vel) > 0.1) {
+                x += vel;
+                vel *= 0.93;
             }
 
             if (half > 0) {
@@ -55,13 +77,21 @@ const ServicesV1 = ({ sectionClass, hasTitle }: DataType) => {
         };
 
         raf = requestAnimationFrame(tick);
-        window.addEventListener('scroll', onScroll, { passive: true });
+        wrapper.addEventListener('wheel', onWheel, { passive: false });
+        track.addEventListener('pointerdown', onPointerDown);
+        track.addEventListener('pointermove', onPointerMove);
+        track.addEventListener('pointerup', onPointerUp);
+        track.addEventListener('pointercancel', onPointerUp);
         track.addEventListener('mouseenter', onEnter);
         track.addEventListener('mouseleave', onLeave);
 
         return () => {
             cancelAnimationFrame(raf);
-            window.removeEventListener('scroll', onScroll);
+            wrapper.removeEventListener('wheel', onWheel);
+            track.removeEventListener('pointerdown', onPointerDown);
+            track.removeEventListener('pointermove', onPointerMove);
+            track.removeEventListener('pointerup', onPointerUp);
+            track.removeEventListener('pointercancel', onPointerUp);
             track.removeEventListener('mouseenter', onEnter);
             track.removeEventListener('mouseleave', onLeave);
         };
@@ -92,7 +122,7 @@ const ServicesV1 = ({ sectionClass, hasTitle }: DataType) => {
                     <div className="services-marquee-track" ref={trackRef}>
                         {items.map((service, index) => (
                             <div className="service-style-one-item" key={index}>
-                                <Image src={`/assets/img/icon/${service.icon}`} alt={service.title} width={82} height={65} />
+                                <Image src={`/assets/img/icon/${service.icon}`} alt={service.title} width={82} height={65} draggable={false} />
                                 <h4>{service.title}</h4>
                                 <p>{service.text}</p>
                             </div>

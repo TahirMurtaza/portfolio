@@ -6750,6 +6750,14 @@ body.loaded {
     gap: 30px;
     width: max-content;
     will-change: transform;
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.services-marquee-track img {
+    -webkit-user-drag: none;
 }
 
 .services-marquee .service-style-one-item {
