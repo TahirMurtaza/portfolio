@@ -9,7 +9,9 @@
                 "animation": "animate__animated animate__fadeInUp",
                 "organization": "MA Technologies — Remote",
                 "duration": "Apr 2025 - Present",
-                "description": "Architected and deployed an AI Voice Assistant for clinical research, automating patient screening and scheduling, reducing manual effort by 30%. Built real-time AI Agents with Vapi, FastAPI, Azure, Gemini, and OpenAI. Reduced recruiter workload by 40% and achieved 99.9% system reliability."
+                "description": "Architected and deployed an AI Voice Assistant for clinical research, automating patient screening and scheduling, reducing manual effort by 30%. Built real-time AI Agents with Vapi, FastAPI, Azure, Gemini, and OpenAI. Reduced recruiter workload by 40% and achieved 99.9% system reliability.",
+                "logo": "ma.jpeg",
+                "website": "https://matechnologies.com"
             },
             {
                 "id": 102,
@@ -17,7 +19,9 @@
                 "animation": "animate__animated animate__fadeInUp",
                 "organization": "Turing (Google) — Remote",
                 "duration": "Oct 2024 - Feb 2025",
-                "description": "Developed, tested, and refined prompts for Large Language Models, optimizing AI output for specific use cases. Reduced bias by 20%, reduced ambiguity by 15%, and improved user satisfaction through rigorous iterative testing."
+                "description": "Developed, tested, and refined prompts for Large Language Models, optimizing AI output for specific use cases. Reduced bias by 20%, reduced ambiguity by 15%, and improved user satisfaction through rigorous iterative testing.",
+                "logo": "turing.jpeg",
+                "website": "https://www.turing.com"
             },
             {
                 "id": 103,
@@ -25,7 +29,9 @@
                 "animation": "animate__animated animate__fadeInUp",
                 "organization": "Optimyse — Remote",
                 "duration": "May 2021 - Jun 2024",
-                "description": "Led full-stack development of a SaaS multi-tenant e-commerce platform. Automated product migration with FastAPI, cutting migration time by 50%. Built real-time product monitoring with Python Scrapy/Selenium and orchestrated Firebase for auth and analytics."
+                "description": "Led full-stack development of a SaaS multi-tenant e-commerce platform. Automated product migration with FastAPI, cutting migration time by 50%. Built real-time product monitoring with Python Scrapy/Selenium and orchestrated Firebase for auth and analytics.",
+                "logo": "optimyse.jpeg",
+                "website": "https://optimyse.co"
             },
             {
                 "id": 104,
@@ -33,7 +39,9 @@
                 "animation": "animate__animated animate__fadeInUp",
                 "organization": "Dijit Labs AI-OCR — Remote",
                 "duration": "May 2023 - Jul 2023",
-                "description": "Automated data extraction from invoices and delivery notes using Angular Material and Java Spring Boot, increasing processing efficiency by 35%. Deployed and managed applications on AWS EC2, S3, and Lambda."
+                "description": "Automated data extraction from invoices and delivery notes using Angular Material and Java Spring Boot, increasing processing efficiency by 35%. Deployed and managed applications on AWS EC2, S3, and Lambda.",
+                "logo": "dijit.jpeg",
+                "website": "https://dijit.app"
             },
             {
                 "id": 105,
@@ -41,7 +49,9 @@
                 "animation": "animate__animated animate__fadeInUp",
                 "organization": "5Cube — Karachi, Pakistan",
                 "duration": "Feb 2019 - May 2021",
-                "description": "Led a cross-functional team of 8+, achieving 95% client satisfaction. Engineered a Resume & Job Scoring/Matching Engine using Django REST Framework, and developed a Retail Management System with offline data syncing using Angular and PostgreSQL."
+                "description": "Led a cross-functional team of 8+, achieving 95% client satisfaction. Engineered a Resume & Job Scoring/Matching Engine using Django REST Framework, and developed a Retail Management System with offline data syncing using Angular and PostgreSQL.",
+                "logo": "5cube.jpeg",
+                "website": "https://5cube.io"
             },
             {
                 "id": 106,
@@ -49,7 +59,9 @@
                 "animation": "animate__animated animate__fadeInUp",
                 "organization": "Nixaam — Karachi, Pakistan",
                 "duration": "Sep 2017 - Feb 2019",
-                "description": "Built enterprise healthcare applications — patient management, physician and radiologist profile systems — with C# ASP.NET MVC and SQL Server. Developed a ticketing help-desk system, RSNA-consistent clinical report templating with web-crawler imports, and a web-based DICOM Viewer (Meteor JS, ASP.NET Web API 2.0) supporting CR to PET/Angio imaging."
+                "description": "Built enterprise healthcare applications — patient management, physician and radiologist profile systems — with C# ASP.NET MVC and SQL Server. Developed a ticketing help-desk system, RSNA-consistent clinical report templating with web-crawler imports, and a web-based DICOM Viewer (Meteor JS, ASP.NET Web API 2.0) supporting CR to PET/Angio imaging.",
+                "logo": "nixaam.jpeg",
+                "website": "https://nixaam.com"
             }
         ]
     },

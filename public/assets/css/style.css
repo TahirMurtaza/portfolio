@@ -7034,3 +7034,25 @@ body.loaded {
         left: 18px;
     }
 }
+
+/* ============================================================
+   Resume timeline — company logos & links
+============================================================ */
+.timeline-org {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.timeline-org .company-logo img {
+    border-radius: 10px;
+    display: block;
+}
+
+.timeline-org p a {
+    color: inherit;
+}
+
+.timeline-org p a:hover {
+    color: var(--color-primary);
+}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Animate from "../animation/Animate";
 
 interface DataType {
@@ -7,10 +8,12 @@ interface DataType {
     duration?: string;
     description?: string;
     animation?: string;
+    logo?: string;
+    website?: string;
 }
 
 const SingleResumeV1 = ({ item }: { item: DataType }) => {
-    const { title, organization, duration, description, animation } = item;
+    const { title, organization, duration, description, animation, logo, website } = item;
 
     return (
         <>
@@ -18,10 +21,22 @@ const SingleResumeV1 = ({ item }: { item: DataType }) => {
                 <div className="timeline-style-one-item">
                     <div className="timeline-header">
                         <div className="left">
-                            <h4>{title}</h4>
-                            <p>
-                                {organization}
-                            </p>
+                            <div className="timeline-org">
+                                {logo &&
+                                    <a className="company-logo" href={website} target="_blank" rel="noopener noreferrer" aria-label={organization}>
+                                        <Image src={`/assets/img/companies/${logo}`} alt={organization || "Company"} width={48} height={48} />
+                                    </a>
+                                }
+                                <div>
+                                    <h4>{title}</h4>
+                                    <p>
+                                        {website
+                                            ? <a href={website} target="_blank" rel="noopener noreferrer">{organization}</a>
+                                            : organization
+                                        }
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div className="right">
                             <span>{duration}</span>
