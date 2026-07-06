@@ -38,5 +38,45 @@
         "text": "Building production-grade voice AI agents with Vapi and Twilio — multi-agent squads for outbound calling, screening, scheduling, and warm transfers.",
         "btnText": "Read More",
         "delay": "600ms"
+    },
+    {
+        "id": 5,
+        "activeClass": "",
+        "icon": "5.png",
+        "thumbFull": "app-development.jpg",
+        "title": "Chatbot Development & RAG",
+        "text": "Custom AI chatbots powered by RAG pipelines, vector databases (FAISS, Pinecone), and knowledge bases — grounded, accurate answers from your own data.",
+        "btnText": "Read More",
+        "delay": "100ms"
+    },
+    {
+        "id": 6,
+        "activeClass": "",
+        "icon": "6.png",
+        "thumbFull": "web-design.jpg",
+        "title": "GPT Integration",
+        "text": "Embedding GPT, Gemini, and Claude into existing products — API integrations, structured outputs, function calling, and AI features that ship to production.",
+        "btnText": "Read More",
+        "delay": "200ms"
+    },
+    {
+        "id": 7,
+        "activeClass": "",
+        "icon": "7.png",
+        "thumbFull": "digital-marketing.jpg",
+        "title": "Data Extraction & Web Scraping",
+        "text": "Automated data pipelines with Python Scrapy, Selenium, and AI-OCR — extracting structured data from websites, invoices, and documents at scale.",
+        "btnText": "Read More",
+        "delay": "400ms"
+    },
+    {
+        "id": 8,
+        "activeClass": "",
+        "icon": "8.png",
+        "thumbFull": "ui-ux-design.jpg",
+        "title": "Process Automation",
+        "text": "Streamlining business operations with intelligent automation — scheduled jobs, monitoring services, and bots that cut manual effort and resolution time.",
+        "btnText": "Read More",
+        "delay": "600ms"
     }
 ]
