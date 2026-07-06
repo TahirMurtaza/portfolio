@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "title": "DevOps Work for Security Application",
+        "date": "May 13, 2026",
+        "rating": 5.0,
+        "text": "Tahir was great to work with, and I would happily recommend him for anyone looking for devops related work. He worked with my company for quite a long time supporting our needs as…"
+    },
+    {
+        "id": 2,
+        "title": "Backend Developer",
+        "date": "May 5, 2025",
+        "rating": 5.0,
+        "text": "Working with Tahir was a great experience, he was dedicated, professional and had tremendous expertise."
+    },
+    {
+        "id": 3,
+        "title": "Full-Stack Developer (Flask/Vue3/Docker/AWS)",
+        "date": "April 10, 2025",
+        "rating": 5.0,
+        "text": "We hired Tahir for a short full-stack development task, and we're glad to have worked with him!"
+    },
+    {
+        "id": 4,
+        "title": "Python Flask Refactor — Team Shift Management",
+        "date": "September 11, 2024",
+        "rating": 5.0,
+        "text": "Tahir did an excellent job refactoring our team shift management software using Python and Flask. He modernized the frontend from Bootstrap to Metronic, creating a sleek, user-frie…"
+    },
+    {
+        "id": 5,
+        "title": "Fullstack Developer vue.js/Python — SaaS RegTech",
+        "date": "March 7, 2024",
+        "rating": 5.0,
+        "text": "Tahir has been really helpful on our project and has been able to help us shipping features in time."
+    },
+    {
+        "id": 6,
+        "title": "Angular Frontend Expert — Web App Modifications",
+        "date": "May 6, 2023",
+        "rating": 5.0,
+        "text": "Highly recommend Tahir - attentive, prompt, and personable. Knowledgeable in frontend as needed. A true professional."
+    },
+    {
+        "id": 7,
+        "title": "TypeScript Migration",
+        "date": "May 2, 2023",
+        "rating": 5.0,
+        "text": "Tahir delivered good work on this migration project and was very punctual in delivering outcomes. He is also quick to respond to the feedback given, and communicates well during th…"
+    },
+    {
+        "id": 8,
+        "title": "Write Flask/Node App & Setup in AWS Lambda",
+        "date": "November 12, 2022",
+        "rating": 5.0,
+        "text": "Excellent engineer."
+    },
+    {
+        "id": 9,
+        "title": "Modify API",
+        "date": "November 9, 2022",
+        "rating": 5.0,
+        "text": "Amazing freelancer, very skilled very polite and very efficient. Works hard and delivers the job as discussed. All the best!"
+    },
+    {
+        "id": 10,
+        "title": "Full Stack Development Consultation on AWS",
+        "date": "November 7, 2022",
+        "rating": 5.0,
+        "text": "Imagine getting what you asked for, and more. Beyond output, Tahir delivers outcomes. Will definitely recommend projects for Tahir. He's fluent in English, and is very patient. Th…"
+    },
+    {
+        "id": 11,
+        "title": "Deploy a Flask App",
+        "date": "August 27, 2022",
+        "rating": 5.0,
+        "text": "Thank you Tahir for a job well done. We will work again together soon, you have earned my trust for your skills as well as your responsivity!"
+    },
+    {
+        "id": 12,
+        "title": "Software Engineer Tutor",
+        "date": "August 17, 2022",
+        "rating": 5.0,
+        "text": "He did great job on task."
+    },
+    {
+        "id": 13,
+        "title": "Simple Webpage for Flask Python Project",
+        "date": "April 7, 2022",
+        "rating": 5.0,
+        "text": "Tahir is an amazing freelancer with a lot of experience in handling Flask, HTML, and python jobs. His quality of work is exceptional. He is always happy to assist his customers in…"
+    },
+    {
+        "id": 14,
+        "title": "Good Knowledge of Python and Flask",
+        "date": "March 27, 2022",
+        "rating": 5.0,
+        "text": "Very professional freelancer. He respected the delivery schedule and was very prompt with making changes needed. Will hire him again for sure."
+    },
+    {
+        "id": 15,
+        "title": "Help with Python",
+        "date": "February 24, 2022",
+        "rating": 5.0,
+        "text": "Very honest developer and committed. Tries his best to be available on demand. I would like to work with him again and again provided he remains available when I need him. Recomme…"
+    },
+    {
+        "id": 16,
+        "title": "Fix a Bug — Flask & React App",
+        "date": "January 21, 2022",
+        "rating": 5.0,
+        "text": "Tahir was very communicative and helped us figure out our bug and how to solve it. Thank you very much!"
+    },
+    {
+        "id": 17,
+        "title": "Full Stack — Python/SonarQube",
+        "date": "January 10, 2022",
+        "rating": 5.0,
+        "text": "Good work, will work again!!"
+    },
+    {
+        "id": 18,
+        "title": "Python Front End and Back End Developer",
+        "date": "November 15, 2021",
+        "rating": 4.2,
+        "text": "He performed all python duties as requested. There is room for more projects with him. I might hire this freelancer again."
+    },
+    {
+        "id": 19,
+        "title": "Full Stack Dev — Python/Django Expert",
+        "date": "November 11, 2021",
+        "rating": 5.0,
+        "text": "Good enough."
+    },
+    {
+        "id": 20,
+        "title": "Full Stack Developer — Python/Terraform Expert",
+        "date": "November 3, 2021",
+        "rating": 5.0,
+        "text": "His communication is very fast, so he understand what I am saying very well. I like his work."
+    },
+    {
+        "id": 21,
+        "title": "Python Django/Flask",
+        "date": "June 12, 2021",
+        "rating": 5.0,
+        "text": "Tahir is very knowledgeable with Python, Django and Flask. He is a great communicator, trustworthy and I will definitely be hiring him again."
+    },
+    {
+        "id": 22,
+        "title": "WordPress Expert to Copy Web Design",
+        "date": "June 10, 2021",
+        "rating": 5.0,
+        "text": "Tahir is excellent! He works fast and has a lot of skill in WordPress. Will hire again!"
+    },
+    {
+        "id": 23,
+        "title": "Python Flask — Add Dynamic Fields with Flask-WTF",
+        "date": "June 3, 2021",
+        "rating": 5.0,
+        "text": "Murtaza was excellent! Not only did his skilful work exceed my expectations but he was happy to explain how it all works so I understood in detail. He is also very responsive and h…"
+    }
+]

@@ -6903,3 +6903,87 @@ body.loaded {
     color: rgba(255, 255, 255, 0.85);
     border-color: rgba(255, 255, 255, 0.25);
 }
+
+/* ============================================================
+   Testimonials — Upwork client feedback
+============================================================ */
+.testimonials-upwork-area .upwork-summary {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.testimonials-upwork-area .upwork-summary .stars {
+    color: var(--color-primary);
+    margin-right: 10px;
+}
+
+.testimonials-upwork-area .swiper-slide {
+    height: auto;
+}
+
+.upwork-feedback-card {
+    background: linear-gradient(-130deg, var(--white) 20%, #ECF0F3 100%);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 35px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bg-dark .upwork-feedback-card {
+    background: var(--dark-secondary);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.upwork-feedback-card .rating-row {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 700;
+}
+
+.upwork-feedback-card .rating-row > span:last-child {
+    margin-left: 8px;
+    color: inherit;
+}
+
+.upwork-feedback-card .quote {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.upwork-feedback-card .meta h5 {
+    font-size: 16px;
+    margin: 0 0 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.upwork-feedback-card .meta span {
+    font-size: 14px;
+    opacity: 0.65;
+}
+
+.upwork-tm-pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.upwork-tm-pagination .swiper-pagination-bullet {
+    background: var(--color-primary);
+}
+
+.upwork-profile-link {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.upwork-profile-link i {
+    margin-left: 8px;
+    font-size: 13px;
+}
