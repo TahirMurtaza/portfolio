@@ -42,6 +42,14 @@
                 "organization": "5Cube — Karachi, Pakistan",
                 "duration": "Feb 2019 - May 2021",
                 "description": "Led a cross-functional team of 8+, achieving 95% client satisfaction. Engineered a Resume & Job Scoring/Matching Engine using Django REST Framework, and developed a Retail Management System with offline data syncing using Angular and PostgreSQL."
+            },
+            {
+                "id": 106,
+                "title": "Software Engineer",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "Nixaam — Karachi, Pakistan",
+                "duration": "Sep 2017 - Feb 2019",
+                "description": "Built enterprise healthcare applications — patient management, physician and radiologist profile systems — with C# ASP.NET MVC and SQL Server. Developed a ticketing help-desk system, RSNA-consistent clinical report templating with web-crawler imports, and a web-based DICOM Viewer (Meteor JS, ASP.NET Web API 2.0) supporting CR to PET/Angio imaging."
             }
         ]
     },
