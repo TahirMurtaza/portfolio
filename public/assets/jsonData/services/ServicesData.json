@@ -7,7 +7,8 @@
         "title": "AI Development & Automation",
         "text": "Building intelligent AI-powered systems — voice agents, LLM workflows, and autonomous pipelines that automate complex business operations end-to-end.",
         "btnText": "Read More",
-        "delay": "100ms"
+        "delay": "100ms",
+        "faIcon": "fas fa-robot"
     },
     {
         "id": 2,
@@ -17,7 +18,8 @@
         "title": "Full Stack Web Development",
         "text": "Designing and delivering scalable full-stack applications using Python (FastAPI, Django), React, Next.js, Angular, and cloud-native deployments on AWS and Azure.",
         "btnText": "Read More",
-        "delay": "200ms"
+        "delay": "200ms",
+        "faIcon": "fas fa-laptop-code"
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@
         "title": "LLM & Prompt Engineering",
         "text": "Crafting optimized prompts and fine-tuning LLM outputs (OpenAI, Gemini, Claude) for production use cases — reducing bias, improving accuracy and consistency.",
         "btnText": "Read More",
-        "delay": "400ms"
+        "delay": "400ms",
+        "faIcon": "fas fa-brain"
     },
     {
         "id": 4,
@@ -37,7 +40,8 @@
         "title": "Voice AI Agents",
         "text": "Building production-grade voice AI agents with Vapi and Twilio — multi-agent squads for outbound calling, screening, scheduling, and warm transfers.",
         "btnText": "Read More",
-        "delay": "600ms"
+        "delay": "600ms",
+        "faIcon": "fas fa-microphone-alt"
     },
     {
         "id": 5,
@@ -47,17 +51,19 @@
         "title": "Chatbot Development & RAG",
         "text": "Custom AI chatbots powered by RAG pipelines, vector databases (FAISS, Pinecone), and knowledge bases — grounded, accurate answers from your own data.",
         "btnText": "Read More",
-        "delay": "100ms"
+        "delay": "100ms",
+        "faIcon": "fas fa-comment-dots"
     },
     {
         "id": 6,
         "activeClass": "",
         "icon": "6.png",
         "thumbFull": "web-design.jpg",
-        "title": "GPT Integration",
-        "text": "Embedding GPT, Gemini, and Claude into existing products — API integrations, structured outputs, function calling, and AI features that ship to production.",
+        "title": "LLM Integration",
+        "text": "Embedding LLMs (GPT, Gemini, Claude) into existing products — API integrations, structured outputs, function calling, and AI features that ship to production.",
         "btnText": "Read More",
-        "delay": "200ms"
+        "delay": "200ms",
+        "faIcon": "fas fa-plug"
     },
     {
         "id": 7,
@@ -67,7 +73,8 @@
         "title": "Data Extraction & Web Scraping",
         "text": "Automated data pipelines with Python Scrapy, Selenium, and AI-OCR — extracting structured data from websites, invoices, and documents at scale.",
         "btnText": "Read More",
-        "delay": "400ms"
+        "delay": "400ms",
+        "faIcon": "fas fa-spider"
     },
     {
         "id": 8,
@@ -77,6 +84,7 @@
         "title": "Process Automation",
         "text": "Streamlining business operations with intelligent automation — scheduled jobs, monitoring services, and bots that cut manual effort and resolution time.",
         "btnText": "Read More",
-        "delay": "600ms"
+        "delay": "600ms",
+        "faIcon": "fas fa-cogs"
     }
 ]

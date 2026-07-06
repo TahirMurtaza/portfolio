@@ -7099,3 +7099,16 @@ body.loaded {
     background: var(--color-primary);
     color: var(--dark);
 }
+
+/* ============================================================
+   Services — Font Awesome icons
+============================================================ */
+.service-style-one-item .service-fa-icon {
+    font-size: 52px;
+    color: var(--color-primary);
+    display: inline-block;
+    height: 65px;
+    line-height: 65px;
+    margin-bottom: 30px;
+    transition: all 0.35s ease-in-out;
+}

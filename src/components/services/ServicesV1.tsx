@@ -1,6 +1,5 @@
 "use client"
 import ServicesData from "@/assets/jsonData/services/ServicesData.json"
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 interface DataType {
@@ -122,7 +121,7 @@ const ServicesV1 = ({ sectionClass, hasTitle }: DataType) => {
                     <div className="services-marquee-track" ref={trackRef}>
                         {items.map((service, index) => (
                             <div className="service-style-one-item" key={index}>
-                                <Image src={`/assets/img/icon/${service.icon}`} alt={service.title} width={82} height={65} draggable={false} />
+                                <i className={`service-fa-icon ${service.faIcon}`} />
                                 <h4>{service.title}</h4>
                                 <p>{service.text}</p>
                             </div>
