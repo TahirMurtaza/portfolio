@@ -7056,3 +7056,46 @@ body.loaded {
 .timeline-org p a:hover {
     color: var(--color-primary);
 }
+
+/* ============================================================
+   Resume timeline — date pill & recommendation letter
+============================================================ */
+.timeline-header .right {
+    flex-shrink: 0;
+}
+
+.timeline-header .right span {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 20px;
+}
+
+@media (max-width: 575px) {
+    .timeline-header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+.letter-link {
+    background: none;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: 30px;
+    padding: 7px 22px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.letter-link i {
+    margin-right: 8px;
+}
+
+.letter-link:hover {
+    background: var(--color-primary);
+    color: var(--dark);
+}

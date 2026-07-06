@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import Animate from "../animation/Animate";
 
 interface DataType {
@@ -10,10 +12,11 @@ interface DataType {
     animation?: string;
     logo?: string;
     website?: string;
+    letter?: string;
 }
 
 const SingleResumeV1 = ({ item }: { item: DataType }) => {
-    const { title, organization, duration, description, animation, logo, website } = item;
+    const { title, organization, duration, description, animation, logo, website, letter } = item;
 
     return (
         <>
@@ -46,6 +49,15 @@ const SingleResumeV1 = ({ item }: { item: DataType }) => {
                         <p>
                             {description}
                         </p>
+                        {letter &&
+                            <PhotoProvider>
+                                <PhotoView src={`/assets/img/letters/${letter}`}>
+                                    <button type="button" className="letter-link">
+                                        <i className="far fa-file-alt" /> View Recommendation Letter
+                                    </button>
+                                </PhotoView>
+                            </PhotoProvider>
+                        }
                     </div>
                 </div>
             </Animate>
