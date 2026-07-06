@@ -70,7 +70,7 @@
     },
     {
         "id": 2,
-        "sectionTitle": "Education & Certifications",
+        "sectionTitle": "Education",
         "items": [
             {
                 "id": 201,
@@ -79,22 +79,6 @@
                 "organization": "PAF Karachi Institute of Economics & Technology",
                 "duration": "Feb 2013 - Feb 2018",
                 "description": "Graduated with a BS in Computer Science. Gained strong foundations in software engineering, algorithms, data structures, databases, and computer networks."
-            },
-            {
-                "id": 202,
-                "title": "AI Workflow Automation & LLM Engineering",
-                "animation": "animate__animated animate__fadeInUp",
-                "organization": "Turing — Professional Development",
-                "duration": "2024",
-                "description": "Specialized training in LLM prompt engineering, AI agent architecture, and fine-tuning generative AI responses for real-world production use cases across diverse domains."
-            },
-            {
-                "id": 203,
-                "title": "Cloud & DevOps Practices",
-                "animation": "animate__animated animate__fadeInUp",
-                "organization": "Self-directed — AWS, Azure, Docker",
-                "duration": "2021 - Present",
-                "description": "Hands-on expertise with AWS (EC2, S3, Lambda), Azure (Key Vault, App Insights, Storage Blob), Docker, NGINX, CI/CD pipelines, and Agile/Scrum methodologies."
             }
         ]
     }
