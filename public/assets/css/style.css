@@ -6703,10 +6703,20 @@ body.loaded {
 .photo-frame {
     position: relative;
     display: inline-block;
-    padding: 3px;
-    border-radius: 12px;
+    padding: 4px;
+    border-radius: 14px;
     background: var(--color-primary);
     overflow: hidden;
+    animation: frame-glow 3s ease-in-out infinite;
+}
+
+@keyframes frame-glow {
+    0%, 100% {
+        box-shadow: 0 0 18px rgba(255, 174, 0, 0.35), 0 12px 40px rgba(0, 0, 0, 0.18);
+    }
+    50% {
+        box-shadow: 0 0 42px rgba(255, 174, 0, 0.65), 0 12px 40px rgba(0, 0, 0, 0.18);
+    }
 }
 
 .photo-frame img {
@@ -6720,14 +6730,12 @@ body.loaded {
     content: "";
     position: absolute;
     inset: -50%;
-    background: conic-gradient(from var(--frame-angle), transparent 0%, transparent 65%, #fff7e0 80%, #ffffff 85%, #fff7e0 90%, transparent 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    background: conic-gradient(from var(--frame-angle), transparent 0%, transparent 60%, #fff7e0 78%, #ffffff 85%, #fff7e0 92%, transparent 100%);
+    animation: frame-light-spin 3s linear infinite;
 }
 
 .photo-frame:hover::before {
-    opacity: 1;
-    animation: frame-light-spin 2.5s linear infinite;
+    animation-duration: 1.2s;
 }
 
 @keyframes frame-light-spin {
