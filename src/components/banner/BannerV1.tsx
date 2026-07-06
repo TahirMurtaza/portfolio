@@ -45,7 +45,10 @@ const BannerV1 = () => {
                                     </div>
                                 </div>
                                 <div className="thumb">
-                                    <Image src="/assets/img/illustration/tahir.jpg" alt="Tahir Murtaza" width={600} height={780} style={{ borderRadius: '12px', objectFit: 'cover' }} />
+                                    <div style={{ position: 'relative', display: 'inline-block' }}>
+                                        <div style={{ position: 'absolute', top: '18px', left: '18px', right: '-18px', bottom: '-18px', border: '3px solid var(--color-primary)', borderRadius: '12px' }} />
+                                        <Image src="/assets/img/illustration/tahir.jpg" alt="Tahir Murtaza" width={600} height={780} style={{ position: 'relative', borderRadius: '12px', objectFit: 'cover' }} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
