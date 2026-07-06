@@ -17,6 +17,7 @@ import '@/assets/css/style.css';
 import type { Metadata } from "next";
 import { ToastContainer } from 'react-toastify';
 import Dependency from '@/components/utilities/Dependency';
+import WhatsAppFloat from '@/components/utilities/WhatsAppFloat';
 import ThemeDetector from '@/components/classes/ThemeDetector';
 
 import { Barlow } from "next/font/google";
@@ -43,6 +44,7 @@ export default function RootLayout({
         <ToastContainer />
         <ThemeDetector />
         <Dependency />
+        <WhatsAppFloat />
         {children}
       </body>
     </html>
