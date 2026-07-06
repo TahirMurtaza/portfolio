@@ -1,5 +1,6 @@
 "use client";
 import SocialShareV1 from '../social/SocialShareV1';
+import FloatingIcons from './FloatingIcons';
 import Image from 'next/image';
 import { ReactTyped } from 'react-typed';
 import hand from "@/assets/img/icon/hand.png";
@@ -15,6 +16,7 @@ const BannerV1 = () => {
     return (
         <>
             <div className="banner-style-one-area bg-gray">
+                <FloatingIcons />
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-12">

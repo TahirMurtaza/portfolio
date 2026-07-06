@@ -6836,3 +6836,48 @@ body.loaded {
         transform: translate(-50%, -50%) scale(1.05);
     }
 }
+
+/* ============================================================
+   Banner — floating skill icons background
+============================================================ */
+.banner-style-one-area {
+    position: relative;
+    overflow: hidden;
+}
+
+.floating-icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.banner-style-one-area .container {
+    position: relative;
+    z-index: 1;
+}
+
+.floating-icons i {
+    position: absolute;
+    color: var(--color-primary);
+    opacity: 0.13;
+    animation-name: icon-float;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icon-float {
+    0%, 100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(-24px) rotate(5deg);
+    }
+}
+
+@media (max-width: 767px) {
+    .floating-icons i {
+        font-size: 28px !important;
+        opacity: 0.1;
+    }
+}
