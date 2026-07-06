@@ -1,8 +1,6 @@
 "use client";
 import SocialShareV1 from '../social/SocialShareV1';
 import Image from 'next/image';
-import shape1 from "@/assets/img/shape/1.png"
-import shape17 from "@/assets/img/shape/17.png"
 import { ReactTyped } from 'react-typed';
 import hand from "@/assets/img/icon/hand.png";
 
@@ -48,8 +46,6 @@ const BannerV1 = () => {
                                 </div>
                                 <div className="thumb">
                                     <Image src="/assets/img/illustration/tahir.jpg" alt="Tahir Murtaza" width={600} height={780} style={{ borderRadius: '12px', objectFit: 'cover' }} />
-                                    <Image src={shape1} alt="" />
-                                    <Image src={shape17} alt="" />
                                 </div>
                             </div>
                         </div>

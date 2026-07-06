@@ -1,7 +1,4 @@
 "use client"
-import Image from 'next/image';
-import illustration5 from "@/assets/img/illustration/5.png"
-import shape13 from "@/assets/img/shape/13.png"
 import { toast } from 'react-toastify';
 
 interface FormEventHandler {
@@ -72,10 +69,22 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                                     </div>
                                 </form>
                             </div>
-                        </div>
-                        <div className="contact-illustration">
-                            <Image src={illustration5} alt="Image Not Found" />
-                            <Image src={shape13} alt="Image Not Found" />
+                            <div className="col-lg-5 offset-lg-1 mt-md-50 mt-xs-40">
+                                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                                    <li>
+                                        <a href="mailto:tahirmurtaza5152@gmail.com"><i className="fas fa-envelope" style={{ marginRight: '12px' }} />tahirmurtaza5152@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://calendly.com/tahirmurtaza5152/30min" target="_blank" rel="noopener noreferrer"><i className="fas fa-calendar-alt" style={{ marginRight: '12px' }} />Book a 30-min call</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/in/tahir-murtaza-203131b6" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in" style={{ marginRight: '12px' }} />LinkedIn</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/TahirMurtaza" target="_blank" rel="noopener noreferrer"><i className="fab fa-github" style={{ marginRight: '12px' }} />GitHub</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

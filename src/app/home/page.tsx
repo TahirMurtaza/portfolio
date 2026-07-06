@@ -1,7 +1,6 @@
 import AboutV1 from '@/components/about/AboutV1';
 import BannerV1 from '@/components/banner/BannerV1';
 import ContactV1 from '@/components/contact/ContactV1';
-import FactV1 from '@/components/fact/FactV2';
 import LayoutV1 from '@/components/Layouts/LayoutV1';
 import PortfolioV1 from '@/components/portfolio/PortfolioV1';
 import ResumeV1 from '@/components/resume/ResumeV1';
@@ -19,9 +18,8 @@ const Home = () => {
                 <AboutV1 />
                 <ServicesV1 sectionClass="default-padding" hasTitle={true} />
                 <PortfolioV1 sectionClass="bg-gray default-padding" hasTitle={true} />
-                <FactV1 />
-                <ResumeV1 sectionClass="bg-gray default-padding" />
-                <ContactV1 sectionClass="default-padding" />
+                <ResumeV1 sectionClass="default-padding" />
+                <ContactV1 sectionClass="bg-gray default-padding" />
             </LayoutV1>
         </>
     );

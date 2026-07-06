@@ -1,24 +1,15 @@
-import logo from "@/assets/img/logo.png"
-import Image from 'next/image';
 import Link from 'next/link';
 
 const FooterV1 = () => {
     return (
         <>
-            <footer className="default-padding bg-cover" style={{ backgroundImage: 'url(/assets/img/shape/1.jpg)' }}>
+            <footer className="default-padding">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
                             <div className="footer-items text-center">
-                                <Link href="/" className="footer-logot"><Image src={logo} alt="Image Not Found" /></Link>
-                                <ul className="foter-menu">
-                                    <li><Link href="/">Home</Link></li>
-                                    <li><Link href="/service">Services</Link></li>
-                                    <li><Link href="/projects">Portfolio</Link></li>
-                                    <li><Link href="/blog-with-sidebar">Blog</Link></li>
-                                    <li><Link href="/contact">Contact</Link></li>
-                                </ul>
-                                <p>Copyright  &copy; {(new Date().getFullYear())} Antux. All Rights Reserved</p>
+                                <Link href="/" className="footer-logot" style={{ fontWeight: 800, fontSize: '2rem', letterSpacing: '2px', color: 'inherit', textDecoration: 'none' }}>TM</Link>
+                                <p>Copyright &copy; {(new Date().getFullYear())} Tahir Murtaza. All Rights Reserved</p>
                             </div>
                         </div>
                     </div>

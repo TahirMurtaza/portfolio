@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "end": 12,
+        "end": 7,
         "suffix": "+",
         "label": "Years of Experience"
     },
     {
         "id": 2,
-        "end": 138,
+        "end": 50,
         "suffix": "+",
         "label": "Projects completed"
     }

@@ -14,15 +14,6 @@ const HeaderV3 = () => {
         <>
             <header>
                 <nav className={`navbar mobile-sidenav navbar-box navbar-default validnavs navbar-sticky on no-full ${isMenuSticky ? "sticked" : ""} ${isOpen ? "navbar-responsive" : ""}`}>
-                    <div className="top-search">
-                        <div className="container-xl">
-                            <div className="input-group">
-                                <span className="input-group-addon"><i className="fa fa-search" /></span>
-                                <input type="text" className="form-control" placeholder="Search" name="search" />
-                                <span className="input-group-addon close-search"><i className="fa fa-times" /></span>
-                            </div>
-                        </div>
-                    </div>
                     <div className="container nav-box d-flex justify-content-between align-items-center">
                         <div className="navbar-header">
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" onClick={openMenu}>

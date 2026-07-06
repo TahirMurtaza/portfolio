@@ -1,9 +1,7 @@
 "use client"
 import ServicesData from "@/assets/jsonData/services/ServicesData.json"
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-import arrow from "@/assets/img/icon/arrow.png";
 
 interface DataType {
     sectionClass?: string;
@@ -44,12 +42,9 @@ const ServicesV1 = ({ sectionClass, hasTitle }: DataType) => {
                                     className={`service-style-one-item ${activeIndex === index ? "active" : ""}`}
                                     onMouseEnter={() => handleMouseEnter(index)}
                                 >
-                                    <Image src={`/assets/img/icon/${service.icon}`} alt="Image Not Found" width={82} height={65} />
-                                    <h4><Link href={`/services-details/${service.id}`}>{service.title}</Link></h4>
+                                    <Image src={`/assets/img/icon/${service.icon}`} alt={service.title} width={82} height={65} />
+                                    <h4>{service.title}</h4>
                                     <p>{service.text}</p>
-                                    <Link href={`/services-details/${service.id}`} className="btn-style-four">
-                                        <div className="icon"><Image src={arrow} alt="Image Not Found" /></div> Read More
-                                    </Link>
                                 </div>
                             </div>
                         ))}
