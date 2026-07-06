@@ -6691,3 +6691,47 @@ body.loaded {
 	position: relative;
 	top: 3px;
 }
+/* ============================================================
+   Profile photo frame — moving light on hover
+============================================================ */
+@property --frame-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.photo-frame {
+    position: relative;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 12px;
+    background: var(--color-primary);
+    overflow: hidden;
+}
+
+.photo-frame img {
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.photo-frame::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background: conic-gradient(from var(--frame-angle), transparent 0%, transparent 65%, #fff7e0 80%, #ffffff 85%, #fff7e0 90%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-frame:hover::before {
+    opacity: 1;
+    animation: frame-light-spin 2.5s linear infinite;
+}
+
+@keyframes frame-light-spin {
+    to {
+        --frame-angle: 360deg;
+    }
+}

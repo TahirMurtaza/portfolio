@@ -45,7 +45,9 @@ const BannerV1 = () => {
                                     </div>
                                 </div>
                                 <div className="thumb">
-                                    <Image src="/assets/img/illustration/tahir.jpg" alt="Tahir Murtaza" width={485} height={569} style={{ border: '3px solid var(--color-primary)', borderRadius: '12px', objectFit: 'cover' }} />
+                                    <div className="photo-frame">
+                                        <Image src="/assets/img/illustration/tahir.jpg" alt="Tahir Murtaza" width={485} height={569} style={{ objectFit: 'cover' }} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
