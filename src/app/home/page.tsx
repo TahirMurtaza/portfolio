@@ -18,10 +18,11 @@ const Home = () => {
                 <BannerV1 />
                 <AboutV1 />
                 <ServicesV1 sectionClass="default-padding" hasTitle={true} />
-                <PortfolioV1 sectionClass="bg-gray default-padding" hasTitle={true} />
-                <ResumeV1 sectionClass="default-padding" />
-                <TestimonialsUpwork sectionClass="bg-gray default-padding" />
-                <ContactV1 sectionClass="default-padding" />
+                {/* Portfolio hidden for now — re-enable when projects are ready */}
+                {/* <PortfolioV1 sectionClass="bg-gray default-padding" hasTitle={true} /> */}
+                <ResumeV1 sectionClass="bg-gray default-padding" />
+                <TestimonialsUpwork sectionClass="default-padding" />
+                <ContactV1 sectionClass="bg-gray default-padding" />
             </LayoutV1>
         </>
     );
