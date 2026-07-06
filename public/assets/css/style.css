@@ -6814,9 +6814,14 @@ body.loaded {
 .banner-style-one-area .thumb::before {
     content: "";
     position: absolute;
-    inset: -70px;
-    background: radial-gradient(ellipse at center, rgba(255, 174, 0, 0.5) 0%, rgba(255, 174, 0, 0.18) 40%, transparent 70%);
-    filter: blur(35px);
+    top: 50%;
+    left: 50%;
+    width: min(760px, 110vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(255, 174, 0, 0.45) 0%, rgba(255, 174, 0, 0.12) 38%, transparent 62%);
+    filter: blur(40px);
     pointer-events: none;
     animation: halo-pulse 3s ease-in-out infinite;
 }
@@ -6824,10 +6829,10 @@ body.loaded {
 @keyframes halo-pulse {
     0%, 100% {
         opacity: 0.5;
-        transform: scale(0.95);
+        transform: translate(-50%, -50%) scale(0.95);
     }
     50% {
         opacity: 1;
-        transform: scale(1.05);
+        transform: translate(-50%, -50%) scale(1.05);
     }
 }
