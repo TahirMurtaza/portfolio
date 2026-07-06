@@ -1,21 +1,43 @@
 "use client"
+import { useState } from 'react';
 import { toast } from 'react-toastify';
-
-interface FormEventHandler {
-    (event: React.FormEvent<HTMLFormElement>): void;
-}
 
 interface DataType {
     sectionClass?: string;
 }
 
+const WEB3FORMS_ACCESS_KEY = "826fa2a6-4180-45e2-99c2-773d594190b6";
+
 const ContactV1 = ({ sectionClass }: DataType) => {
 
-    const handleForm: FormEventHandler = (event) => {
-        event.preventDefault()
+    const [submitting, setSubmitting] = useState(false);
+
+    const handleForm = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
         const form = event.target as HTMLFormElement;
-        form.reset()
-        toast.success("Thanks For Your Message")
+        const formData = new FormData(form);
+        formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+        formData.append('subject', 'New message from portfolio contact form');
+        formData.append('from_name', 'Portfolio Contact Form');
+
+        setSubmitting(true);
+        try {
+            const res = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+            });
+            const data = await res.json();
+            if (data.success) {
+                form.reset();
+                toast.success("Thanks! Your message has been sent.");
+            } else {
+                toast.error(data.message || "Something went wrong. Please try again.");
+            }
+        } catch {
+            toast.error("Network error. Please email me directly at tahirmurtaza5152@gmail.com");
+        } finally {
+            setSubmitting(false);
+        }
     }
 
     return (
@@ -27,6 +49,7 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <form className="contact-form contact-form" onSubmit={handleForm}>
+                                    <input type="checkbox" name="botcheck" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
                                     <div className="row">
                                         <div className="col-lg-12">
                                             <div className="form-group">
@@ -52,14 +75,14 @@ const ContactV1 = ({ sectionClass }: DataType) => {
                                     <div className="row">
                                         <div className="col-lg-12">
                                             <div className="form-group comments">
-                                                <textarea className="form-control" id="comments" name="comments" placeholder="Tell Us About Project *" autoComplete='off' required />
+                                                <textarea className="form-control" id="message" name="message" placeholder="Tell Us About Project *" autoComplete='off' required />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-lg-12">
-                                            <button className="btn-style-regular" type="submit" name="submit" id="submit">
-                                                <span>Get in Touch</span> <i className="fas fa-arrow-right" />
+                                            <button className="btn-style-regular" type="submit" name="submit" id="submit" disabled={submitting}>
+                                                <span>{submitting ? 'Sending…' : 'Get in Touch'}</span> <i className="fas fa-arrow-right" />
                                             </button>
                                         </div>
                                     </div>
