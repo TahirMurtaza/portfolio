@@ -31,7 +31,8 @@ const TestimonialsUpwork = ({ sectionClass }: DataType) => {
                         modules={[Autoplay, Pagination]}
                         loop={true}
                         spaceBetween={30}
-                        autoplay={{ delay: 3500, pauseOnMouseEnter: true }}
+                        speed={6000}
+                        autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: true }}
                         pagination={{ el: '.upwork-tm-pagination', clickable: true }}
                         breakpoints={{
                             0: { slidesPerView: 1 },

@@ -7112,3 +7112,8 @@ body.loaded {
     margin-bottom: 30px;
     transition: all 0.35s ease-in-out;
 }
+
+/* Continuous linear auto-scroll for testimonials */
+.testimonials-upwork-area .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
