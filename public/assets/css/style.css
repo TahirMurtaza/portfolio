@@ -7117,3 +7117,17 @@ body.loaded {
 .testimonials-upwork-area .swiper-wrapper {
     transition-timing-function: linear !important;
 }
+
+/* ============================================================
+   Reveal fade on scroll (resume timeline)
+============================================================ */
+.reveal-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-fade.in-view {
+    opacity: 1;
+    transform: none;
+}
