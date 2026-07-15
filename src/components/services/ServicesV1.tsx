@@ -124,6 +124,11 @@ const ServicesV1 = ({ sectionClass, hasTitle }: DataType) => {
                                 <i className={`service-fa-icon ${service.faIcon}`} />
                                 <h4>{service.title}</h4>
                                 <p>{service.text}</p>
+                                {'caseStudy' in service && service.caseStudy &&
+                                    <a href={service.caseStudy as string} className="service-case-link">
+                                        View Case Study <i className="fas fa-arrow-right" />
+                                    </a>
+                                }
                             </div>
                         ))}
                     </div>

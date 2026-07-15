@@ -41,7 +41,8 @@
         "text": "Building production-grade voice AI agents with Vapi and Twilio — multi-agent squads for outbound calling, screening, scheduling, and warm transfers.",
         "btnText": "Read More",
         "delay": "600ms",
-        "faIcon": "fas fa-microphone-alt"
+        "faIcon": "fas fa-microphone-alt",
+        "caseStudy": "/case-studies/voice-ai-clinical-trial-recruitment"
     },
     {
         "id": 5,
