@@ -7408,3 +7408,61 @@ body.loaded {
     margin-left: 6px;
     font-size: 12px;
 }
+
+/* ============================================================
+   Case Studies index page
+============================================================ */
+.cs-index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.cs-index-card {
+    display: block;
+    background: linear-gradient(-130deg, var(--white) 20%, #ECF0F3 100%);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 40px 35px;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.bg-dark .cs-index-card {
+    background: var(--dark-secondary);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.cs-index-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-4px);
+    color: inherit;
+}
+
+.cs-index-card h3 {
+    font-size: 22px;
+    margin: 0 0 12px;
+}
+
+.cs-index-card > p {
+    margin-bottom: 25px;
+}
+
+.cs-index-metrics {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.cs-index-metrics strong {
+    display: block;
+    font-size: 20px;
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+.cs-index-metrics span {
+    font-size: 12px;
+    opacity: 0.7;
+}
