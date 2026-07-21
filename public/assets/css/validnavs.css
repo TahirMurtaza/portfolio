@@ -3422,6 +3422,10 @@ nav.navbar.validnavs .navbar-collapse.collapse.collapse-mobile.show {
 		transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 		z-index: 9999;
 	}
+
+	.bg-dark nav.navbar.validnavs.mobile-sidenav .navbar-collapse.collapse.collapse-mobile {
+		background: var(--dark-secondary) none repeat scroll 0 0;
+	}
 }
 
 nav.navbar.validnavs.mobile-sidenav .navbar-collapse.collapse.collapse-mobile ul.nav {
@@ -3483,6 +3487,11 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 	font-weight: 400;
 	font-size: 15px;
 	margin: 0;
+}
+
+.bg-dark nav.navbar.validnavs .navbar-collapse.collapse button {
+	color: var(--white);
+	border-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar .attr-right.flex .attr-nav {
