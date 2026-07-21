@@ -88,6 +88,15 @@
                 "duration": "Jun 2026",
                 "description": "IBM professional certificate covering AI agent architectures, tool use, and orchestration. Credential ID FLNNM5N33R9Q — click the organization name to verify on Coursera.",
                 "website": "https://www.coursera.org/account/accomplishments/verify/FLNNM5N33R9Q"
+            },
+            {
+                "id": 203,
+                "title": "Agentic AI with LangChain and LangGraph",
+                "animation": "animate__animated animate__fadeInUp",
+                "organization": "IBM — Coursera",
+                "duration": "Jul 2026",
+                "description": "IBM certificate on building agentic AI systems with LangChain and LangGraph — agents with memory, iteration, and conditional logic; self-improving agents using Reflection, Reflexion, and ReAct architectures; collaborative multi-agent orchestration; and agentic RAG systems with query routing and retrieval-enhanced reasoning. Credential ID PVT59KFOX7V0 — click the organization name to verify on Coursera.",
+                "website": "https://www.coursera.org/account/accomplishments/verify/PVT59KFOX7V0"
             }
         ]
     }
