@@ -28,8 +28,14 @@ const ContactV1 = ({ sectionClass }: DataType) => {
             });
             const data = await res.json();
             if (data.success) {
+                const firstName = (formData.get('name') as string || '').trim().split(' ')[0];
                 form.reset();
-                toast.success("Thanks! Your message has been sent.");
+                toast.success(
+                    <div className="toast-thank-you">
+                        <strong>Thank you{firstName ? `, ${firstName}` : ''}!</strong>
+                        <span>Your message has been sent successfully. I&apos;ll get back to you within 24 hours.</span>
+                    </div>
+                );
             } else {
                 toast.error(data.message || "Something went wrong. Please try again.");
             }
