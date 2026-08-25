@@ -8,7 +8,8 @@
         "text": "Building intelligent AI-powered systems — voice agents, LLM workflows, and autonomous pipelines that automate complex business operations end-to-end.",
         "btnText": "Read More",
         "delay": "100ms",
-        "faIcon": "fas fa-robot"
+        "faIcon": "fas fa-robot",
+        "caseStudy": "/case-studies/adology-competitive-ad-intelligence"
     },
     {
         "id": 2,

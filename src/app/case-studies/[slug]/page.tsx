@@ -121,10 +121,25 @@ const CaseStudyPage = async ({ params }: { params: Promise<{ slug: string }> }) 
                         </div>
                     </div>
 
+                    {cs.technology ? (
+                        <div className="cs-technology">
+                            <span className="cs-badge">Technology</span>
+                            <h2>Built for production</h2>
+                            <div className="cs-tech-grid">
+                                {cs.technology.map((item) => (
+                                    <div className="cs-tech-item" key={item.label}>
+                                        <strong>{item.label}</strong>
+                                        <span>{item.value}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ) : null}
+
                     {/* CTA */}
                     <div className="cs-cta text-center">
                         <h2>Want something like this for your workflow?</h2>
-                        <p>Scripts, screening logic, scheduling, and integrations — customized for your use case.</p>
+                        <p>{cs.ctaText ?? "Production AI, workflows, and integrations — customized for your use case."}</p>
                         <a className="btn-style-regular" href="https://calendly.com/tahirmurtaza5152/30min" target="_blank" rel="noopener noreferrer"><span>Book a Call</span> <i className="fas fa-arrow-right" /></a>
                     </div>
 

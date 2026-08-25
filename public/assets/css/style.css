@@ -7490,6 +7490,51 @@ body.loaded {
     font-size: 12px;
 }
 
+.cs-technology {
+    margin: 0 0 90px;
+    padding: 45px;
+    border: 1px solid rgba(128, 128, 128, 0.18);
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255, 174, 0, 0.08), transparent 58%);
+}
+
+.cs-technology h2 {
+    margin-bottom: 30px;
+}
+
+.cs-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 40px;
+}
+
+.cs-tech-item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 18px;
+    padding: 18px 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.16);
+}
+
+.cs-tech-item strong {
+    color: var(--color-primary);
+}
+
+@media (max-width: 767px) {
+    .cs-technology {
+        padding: 30px 24px;
+    }
+
+    .cs-tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-tech-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+}
+
 /* ============================================================
    Case Studies index page
 ============================================================ */
