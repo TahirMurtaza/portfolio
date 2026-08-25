@@ -22,6 +22,9 @@ export interface CaseStudy {
     flow: { step: string; title: string; text: string }[];
     shipped: string[];
     hard: { title: string; text: string }[];
+    role?: string;
+    builtHeading?: string;
+    shippedHeading?: string;
     technology?: { label: string; value: string }[];
     ctaText?: string;
 }
@@ -141,7 +144,10 @@ const caseStudies: CaseStudy[] = [
         badge: "Full-Stack AI Engineering",
         title: "AI-Powered Competitive Ad Intelligence Platform",
         summary:
-            "I architected and built Adology's backend intelligence layer: an event-driven platform that continuously acquires competitor ads, understands image and video creative with multimodal AI, and turns market patterns into actionable campaign recommendations.",
+            "As part of the Adology engineering team, I contributed to the backend intelligence layer of an event-driven platform that continuously acquires competitor ads, understands image and video creative with multimodal AI, and turns market patterns into actionable campaign recommendations.",
+        role: "Contributing Full-Stack AI Engineer",
+        builtHeading: "Platform Work I Contributed To",
+        shippedHeading: "What the Team Shipped",
         primaryImpact: "24/7 automated creative intelligence",
         metrics: [
             { value: "24/7", label: "Automated Acquisition & Processing" },
@@ -250,7 +256,7 @@ const caseStudies: CaseStudy[] = [
             { label: "Cloud", value: "AWS Lambda, Batch, SQS, EventBridge, SAM, ECR, X-Ray" },
             { label: "Delivery", value: "Docker, infrastructure as code, environment-aware serverless deployments" },
         ],
-        ctaText: "From ingestion and multimodal analysis to recommendations and cloud infrastructure, I build the complete AI system — not just the model call.",
+        ctaText: "I help engineering teams turn data, multimodal analysis, and cloud infrastructure into reliable production AI products.",
     },
 ];
 

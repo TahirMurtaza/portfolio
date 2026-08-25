@@ -41,6 +41,7 @@ const CaseStudyPage = async ({ params }: { params: Promise<{ slug: string }> }) 
                         <div className="cs-hero-main">
                             <span className="cs-badge">{cs.badge}</span>
                             <h1>{cs.title}</h1>
+                            {cs.role ? <p className="cs-role"><i className="fas fa-user-cog" /> Role: {cs.role}</p> : null}
                             <p className="cs-summary">{cs.summary}</p>
                             <Link className="btn-style-regular" href="/#contact"><span>Get in Touch</span> <i className="fas fa-arrow-right" /></Link>
                         </div>
@@ -69,7 +70,7 @@ const CaseStudyPage = async ({ params }: { params: Promise<{ slug: string }> }) 
 
                     {/* What We Built */}
                     <div className="cs-section">
-                        <h2>What We Built</h2>
+                        <h2>{cs.builtHeading ?? "What We Built"}</h2>
                         {cs.built.map((section, i) => (
                             <div className="cs-built-block" key={i}>
                                 <h3>{section.heading}</h3>
@@ -105,7 +106,7 @@ const CaseStudyPage = async ({ params }: { params: Promise<{ slug: string }> }) 
                     {/* Shipped / Hard */}
                     <div className="cs-two-col">
                         <div>
-                            <h2>What Shipped</h2>
+                            <h2>{cs.shippedHeading ?? "What Shipped"}</h2>
                             <ul className="cs-list">
                                 {cs.shipped.map((s, i) => <li key={i}>{s}</li>)}
                             </ul>

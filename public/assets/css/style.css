@@ -7285,6 +7285,22 @@ body.loaded {
     margin-bottom: 30px;
 }
 
+.cs-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0 0 18px;
+    padding: 7px 14px;
+    border-left: 3px solid var(--color-primary);
+    background: rgba(255, 174, 0, 0.08);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cs-role i {
+    color: var(--color-primary);
+}
+
 .cs-snapshot {
     background: linear-gradient(-130deg, var(--white) 20%, #ECF0F3 100%);
     border: 1px solid rgba(0, 0, 0, 0.06);
