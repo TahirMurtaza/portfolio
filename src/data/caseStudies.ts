@@ -258,6 +258,128 @@ const caseStudies: CaseStudy[] = [
         ],
         ctaText: "I help engineering teams turn data, multimodal analysis, and cloud infrastructure into reliable production AI products.",
     },
+    {
+        slug: "darksintel-cyber-threat-intelligence-platform",
+        badge: "Cybersecurity · Data Engineering · AI Systems",
+        title: "Darksintel — Automated Cyber Threat Intelligence Platform",
+        summary:
+            "Darksintel transforms noisy credential-stealer archives into customer-specific exposure intelligence — collecting sources, extracting compromised identities, correlating domains, and delivering alerts, investigations, and reports through one secure portal.",
+        role: "Contributing Full-Stack Engineer",
+        builtHeading: "My Role and Contributions",
+        shippedHeading: "What the Team Shipped",
+        primaryImpact: "Automated exposure intelligence at production scale",
+        metrics: [
+            { value: "20-way", label: "Concurrent Source Collection" },
+            { value: "500K", label: "Adaptive Records per Processing Chunk" },
+            { value: "10K", label: "Domains per Insert Batch" },
+            { value: "945", label: "Configured OSINT Site Checks" },
+        ],
+        deliverables: [
+            "End-to-end ingestion pipeline for credential-stealer archives",
+            "High-volume parsing, deduplication, enrichment, and domain correlation",
+            "Multi-tenant Django portal with customer-isolated exposure intelligence",
+            "Automated email alerts, PDF reports, and real-time WebSocket updates",
+            "Email and username OSINT investigations across 945 configured sites",
+            "JWT-protected API, subscription lifecycle, and Dockerized services",
+        ],
+        problem: [
+            "Credential-stealer malware produces an enormous stream of fragmented data: password exports, browser metadata, cookies, host fingerprints, IP addresses, and inconsistent archive structures distributed across many sources. Security teams cannot manually collect every archive, normalize millions of entries, remove duplicates, correlate exposed identities to company domains, and notify customers quickly enough.",
+            "Darksintel needed to turn that hostile data supply chain into a dependable product. It had to ingest sources concurrently without duplicating work, tolerate malformed and password-protected archives, normalize different stealer formats, process datasets larger than memory, isolate every customer's results, and surface new exposures through a usable investigation portal.",
+            "This was not simply a dashboard project. The core challenge was building a production data and intelligence system whose output remained trustworthy while its inputs were unstructured, inconsistent, and continuously changing.",
+        ],
+        built: [
+            {
+                heading: "Automated Threat-Intelligence Pipeline",
+                paragraphs: [
+                    "I contributed to a staged backend pipeline where collection, decompression, parsing, cleaning, statistics, reporting, and alerting run as separate Celery tasks. Expensive processing stays outside the web request cycle, and each stage has a clear, independently observable responsibility.",
+                    "Telegram collectors use asynchronous I/O with a 20-task semaphore. Archives are content-hashed before ingestion to prevent duplicates, while extracted passwords and source metadata preserve provenance from every intelligence record back to its channel and publication context.",
+                ],
+            },
+            {
+                heading: "Multi-Format Stealer-Log Parsing",
+                paragraphs: [
+                    "Different malware families use different filenames, folder structures, labels, separators, encodings, and metadata conventions. The parser treats each victim folder as an intelligence unit and extracts victim context, credential exposures, and session-cookie exposures into related datasets.",
+                    "Encoding-error tolerance prevents one malformed file from stopping a source. Parsing jobs fan out through Celery and converge through a chord before enriched JSON-lines files are loaded into the database, making the workload parallel, restartable, and visible.",
+                ],
+            },
+            {
+                heading: "Memory-Aware Bulk Processing",
+                paragraphs: [
+                    "My contribution included work around the JSON-lines staging and bulk-processing workflow between parsing and MySQL. Pandas processes configurable chunks of up to 500,000 records while monitoring live memory; if a chunk crosses the ceiling, it is halved and retried rather than losing the batch.",
+                    "Domain enrichment runs as a set operation. Unique email and URL domains are validated, resolved in bulk, created transactionally in batches of 10,000, and mapped back to staged records before bulk loading. This replaces millions of ORM writes with bounded transforms and efficient database operations.",
+                ],
+            },
+            {
+                heading: "Deterministic Deduplication and Correlation",
+                paragraphs: [
+                    "I helped implement and support deterministic SHA-256 identities for both source archives and exposure records. Credential hashes derive from username, password, and URL; cookie hashes derive from domain, name, and value, so reposted intelligence resolves to one identity regardless of source or collection time.",
+                    "Each credential is connected to both its username domain and target URL domain. This models employee-account exposure, compromised application credentials, or both, while keeping downstream customer queries fast and explainable.",
+                ],
+            },
+            {
+                heading: "Multi-Tenant Intelligence Portal",
+                paragraphs: [
+                    "The Django application scopes every records query through verified customer-domain relationships before filtering, pagination, or rendering. Analysts can investigate by status, victim, email domain, target domain, or TLD and move findings through New, False Positive, and Resolved states.",
+                    "Customer analytics summarize exposed records, sources, victims, cookies, identity type, country distribution, and trends. Redis caches common status summaries, while Django Channels sends long-running events such as completed reports without blocking the UI or requiring polling.",
+                ],
+            },
+            {
+                heading: "OSINT Investigation Engine",
+                paragraphs: [
+                    "I contributed to asynchronous email and username reconnaissance. The email engine discovers supported Holehe modules dynamically; the username engine executes service-specific detection rules across 633 general and 191 social-site definitions. Together with 121 email services, the system includes 945 configured checks.",
+                    "Results stream over WebSockets and normalize into found, not found, rate limited, or error states, giving investigators useful partial intelligence while slower remote checks continue.",
+                ],
+            },
+            {
+                heading: "Alerts, Reports, Product, and API Integration",
+                paragraphs: [
+                    "Scheduled jobs correlate newly ingested records with customer domains and deliver opt-in exposure digests using signed unsubscribe links. Analysts can request branded PDF reports asynchronously and receive secure download URLs through user-scoped WebSocket events.",
+                    "The product layer includes account provisioning, strong-password setup, expiring subscriptions, renewal handling, password-reset protection, email preferences, WooCommerce onboarding, and a JWT-protected domain-check API. Docker Compose packages the web application and Redis services into a reproducible topology.",
+                ],
+            },
+        ],
+        flow: [
+            { step: "01", title: "Source Collection", text: "Asynchronous workers monitor intelligence channels, identify supported archives, extract passwords and metadata, and download sources with bounded concurrency." },
+            { step: "02", title: "Provenance and Deduplication", text: "Each archive is content-hashed and registered with its channel, filename, publication date, password, and processing timestamps; previously seen content is skipped." },
+            { step: "03", title: "Decompression and Discovery", text: "Archives are unpacked and the system recursively discovers victim directories from known password-export signatures while ignoring irrelevant artifacts." },
+            { step: "04", title: "Parallel Parsing", text: "Celery workers extract victim metadata and normalize credentials and session data from heterogeneous formats into JSON-lines staging files." },
+            { step: "05", title: "Domain Enrichment", text: "Email domains, target domains, subdomains, and TLDs are validated, created in bulk where needed, and attached to each exposure." },
+            { step: "06", title: "Bulk Persistence", text: "Memory-aware chunks and bulk loading persist victims, credentials, and cookies efficiently while deterministic hashes block duplicates." },
+            { step: "07", title: "Customer Correlation", text: "Exposures are matched against verified customer domains, producing tenant-specific statistics, trends, geography, and workflow summaries." },
+            { step: "08", title: "Alert and Investigate", text: "Customers receive alerts, investigate identities, run OSINT enrichment, update remediation status, and generate downloadable intelligence reports." },
+        ],
+        shipped: [
+            "Concurrent, provenance-aware source collection from configured threat channels",
+            "Password-aware decompression and multi-format stealer-log discovery",
+            "Distributed Celery parsing with chord-based post-processing",
+            "Adaptive, memory-bounded JSON-lines transformation for large datasets",
+            "Transactional 10,000-row domain inserts and bulk record loading",
+            "SHA-256 deduplication for archives, credentials, and session cookies",
+            "Domain-based multi-tenant isolation and customer-specific intelligence queries",
+            "Exposure workflow with New, False Positive, and Resolved states",
+            "Customer dashboards with trend, geography, identity, and compromise analytics",
+            "WebSocket-powered OSINT results and asynchronous PDF delivery",
+            "Scheduled alerts with customer-controlled notification preferences",
+            "JWT API, subscription onboarding, password lifecycle, and Docker deployment",
+        ],
+        hard: [
+            { title: "Turning Adversarial Data Into a Stable Schema", text: "Stealer logs are inconsistent filesystem dumps produced by different malware families. Defensive parsing had to recover structure without allowing one malformed line, unexpected label, encoding, or broken archive to stop the pipeline, while preserving source provenance throughout." },
+            { title: "Scaling Beyond ORM-Per-Record Writes", text: "High-volume breach data required staged JSONL, adaptive chunks, set-based domain resolution, transactional batching, and bulk loading. Memory pressure and database throughput became first-class design constraints." },
+            { title: "Correct Tenant Isolation", text: "An exposure may matter through an employee email domain, a compromised company application, or both. Isolation had to live in the data model and be reused consistently in records, counts, charts, APIs, alerts, and reports." },
+            { title: "Coordinating Background Work With a Live Product", text: "Collection and reports can take minutes while OSINT checks complete at different speeds. Celery provides durable work, asyncio handles I/O concurrency, Redis coordinates and caches, and Django Channels delivers real-time user-scoped events." },
+            { title: "Making Intelligence Actionable", text: "The product had to connect raw artifacts to an operational workflow: isolate relevant exposures, show victim context, manage remediation status, enrich identities, notify security contacts, and package evidence into useful reports." },
+        ],
+        technology: [
+            { label: "Backend", value: "Python, Django, Django REST Framework, Django Channels" },
+            { label: "Async", value: "Celery, Redis, asyncio" },
+            { label: "Data", value: "MySQL, Pandas, JSON Lines" },
+            { label: "Collection", value: "Telethon, Holehe, HTTPX, configurable OSINT signatures" },
+            { label: "Reporting", value: "ReportLab, WeasyPrint, Matplotlib, transactional email" },
+            { label: "Security", value: "JWT, rate limiting, signed tokens, WooCommerce webhooks" },
+            { label: "Infrastructure", value: "Docker, Docker Compose, Gunicorn, Daphne" },
+        ],
+        ctaText: "I help teams build production AI, cybersecurity, and automation platforms that turn fragmented data into reliable operational decisions.",
+    },
 ];
 
 export default caseStudies;

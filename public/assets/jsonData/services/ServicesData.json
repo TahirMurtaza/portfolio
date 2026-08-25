@@ -76,7 +76,8 @@
         "text": "Automated data pipelines with Python Scrapy, Selenium, and AI-OCR — extracting structured data from websites, invoices, and documents at scale.",
         "btnText": "Read More",
         "delay": "400ms",
-        "faIcon": "fas fa-spider"
+        "faIcon": "fas fa-spider",
+        "caseStudy": "/case-studies/darksintel-cyber-threat-intelligence-platform"
     },
     {
         "id": 8,
