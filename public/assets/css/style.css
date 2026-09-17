@@ -7608,3 +7608,129 @@ body.loaded {
     font-size: 12px;
     opacity: 0.7;
 }
+
+/* ============================================================
+   Introduction video
+============================================================ */
+.intro-video-area {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-video-area::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    right: -170px;
+    top: 50%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 174, 0, 0.14), transparent 68%);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.intro-video-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.48fr);
+    gap: 70px;
+    align-items: center;
+}
+
+.intro-video-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    color: var(--color-primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.intro-video-eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background: currentColor;
+}
+
+.intro-video-copy h2 {
+    margin-bottom: 20px;
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.05;
+}
+
+.intro-video-copy p {
+    margin-bottom: 28px;
+    font-size: 17px;
+}
+
+.intro-video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: inherit;
+    font-weight: 700;
+    border-bottom: 1px solid var(--color-primary);
+    padding-bottom: 5px;
+}
+
+.intro-video-link:hover {
+    color: var(--color-primary);
+}
+
+.intro-video-link i {
+    font-size: 12px;
+}
+
+.intro-video-frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    padding: 4px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, var(--color-primary), rgba(245, 66, 0, 0.5));
+    box-shadow: 0 28px 70px rgba(18, 15, 18, 0.18);
+    overflow: hidden;
+}
+
+.intro-video-frame::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 18px;
+    pointer-events: none;
+}
+
+.intro-video-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 18px;
+    background: #090909;
+}
+
+@media (max-width: 991px) {
+    .intro-video-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .intro-video-copy {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 575px) {
+    .intro-video-frame {
+        border-radius: 15px;
+    }
+
+    .intro-video-frame iframe,
+    .intro-video-frame::after {
+        border-radius: 11px;
+    }
+}

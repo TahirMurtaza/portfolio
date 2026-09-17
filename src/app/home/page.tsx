@@ -5,6 +5,7 @@ import LayoutV1 from '@/components/Layouts/LayoutV1';
 import ResumeV1 from '@/components/resume/ResumeV1';
 import ServicesV1 from '@/components/services/ServicesV1';
 import TestimonialsUpwork from '@/components/testimonial/TestimonialsUpwork';
+import IntroVideo from '@/components/video/IntroVideo';
 
 export const metadata = {
     title: "Tahir Murtaza — Full Stack AI Engineer"
@@ -16,6 +17,7 @@ const Home = () => {
             <LayoutV1>
                 <BannerV1 />
                 <AboutV1 />
+                <IntroVideo />
                 <ServicesV1 sectionClass="default-padding" hasTitle={true} />
                 {/* Portfolio hidden for now — re-enable when projects are ready */}
                 {/* <PortfolioV1 sectionClass="bg-gray default-padding" hasTitle={true} /> */}
